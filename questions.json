@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is CI/CD?",
+        "answer": "Continuous Integration/Continuous Deployment."
+    },
+    {
+        "question": "What does Kubernetes manage?",
+        "answer": "Containers and workloads."
+    },
+    {
+        "question": "What is Infrastructure as Code (IaC)?",
+        "answer": "Managing infrastructure through code files."
+    },
+    {
+        "question": "What is a DevOps pipeline?",
+        "answer": "A series of automated processes for software delivery."
+    },
+    {
+        "question": "What is the role of Docker?",
+        "answer": "Containerization of applications."
+    },
+    {
+        "question": "What is a build artifact?",
+        "answer": "A compiled version of the source code."
+    },
+    {
+        "question": "What does Git do?",
+        "answer": "Version control and collaboration."
+    },
+    {
+        "question": "What is monitoring in DevOps?",
+        "answer": "Tracking performance and health of applications."
+    },
+    {
+        "question": "What is a load balancer?",
+        "answer": "Distributes network traffic across servers."
+    },
+    {
+        "question": "What does 'immutable infrastructure' mean?",
+        "answer": "Infrastructure that cannot be modified after deployment."
+    }
+]

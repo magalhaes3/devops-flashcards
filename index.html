@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Flashcards</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <header>
+        <h1>DevOps Flashcards</h1>
+    </header>
+    <main id="quiz">
+        <div id="question-container"></div>
+        <button id="next-btn">Next</button>
+    </main>
+    <footer>
+        <p>&copy; 2025 DevOps Flashcards</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('question-container').addEventListener('click', function (event) {
+            if (event.target && event.target.matches('.question')) {
+                const answer = event.target.nextElementSibling;
+                if (answer) {
+                    answer.style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
