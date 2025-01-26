@@ -37,3 +37,21 @@ button {
 button:hover {
     background: #005fa3;
 }
+
+.install-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.install-button:hover {
+    background-color: #005fa3;
+}

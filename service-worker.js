@@ -6,8 +6,8 @@ const staticAssets = [
     "./app.js",
     "./questions.json",
     "./manifest.json",
-    "./assets/icons/icon-192x192.png",
-    "./assets/icons/icon-512x512.png"
+    "./assets/icons/favicon-16x16.png",
+    "./assets/icons/favicon-32x32.png"
 ];
 
 self.addEventListener("install", async (event) => {
@@ -35,3 +35,23 @@ async function networkFirst(req) {
         return cache.match(req);
     }
 }
+
+// Add notification scheduling logic to service worker
+self.addEventListener('periodicsync', (event) => {
+    console.log('Periodic sync event:', event);
+    if (event.tag === 'daily-notification') {
+        const now = new Date();
+        self.registration.showNotification('DevOps Flashcards', {
+            body: 'Time to practice your DevOps knowledge!',
+            icon: '/assets/icons/favicon-32x32.png'
+        });
+    }
+});
+
+// Handle notification clicks
+self.addEventListener('notificationclick', (event) => {
+    event.notification.close();
+    event.waitUntil(
+        clients.openWindow('/')
+    );
+});
