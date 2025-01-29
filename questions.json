@@ -38,5 +38,9 @@
     {
         "question": "What does 'immutable infrastructure' mean?",
         "answer": "Infrastructure that cannot be modified after deployment."
+    },
+    {
+        "question": "What is the command to rename a git branch?",
+        "answer": "git branch -m <old-branch-name> <new-branch-name>"
     }
 ]
